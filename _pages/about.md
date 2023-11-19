@@ -2,25 +2,32 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: furkan_square.jpg
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>ML / Backend Engineer</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! I am a developer with experience in
+* Python (flask, fastapi, pytorch, pandas)
+* Containerization technologies (docker, docker compose)
+* CI/CD (GitHub Actions)
+* AWS (EC2, ECR, Lambda, DynamoDB, Lightsail)
+* Bash
+* Linux terminals
+* Some frontend (React, Vue)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In addition to my professional experience, I have a personal interest in functional programming concepts, some of which are immutable data structures, determinist functions, and lazy evaluation. I find these ideas fascinating and try to incorporate them into my work where they're applicable.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+As a side project, I developed [kjbot](https://furkan.github.io/portfolio/korsanjaime/) in 2019, a Telegram bot that tracks debts between housemates. This was a fun project that allowed me to apply my programming skills to a practical problem. Since then, I tried to update the bot's codebase and introduce technologies that I learned as an always-learning developer.
+
+I am committed to staying up-to-date with the latest advancements in my field, and I take pride in my ability to develop innovative solutions to complex problems. Feel free to check out the other pages.
