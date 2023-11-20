@@ -1,76 +1,147 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Furkan Aldemir",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "furkanaldemir+githubpages@gmail.com",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+      "city": "Ankara",
+      "countryCode": "TR"
+    }
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Novit AI",
+      "position": "Team Lead",
+      "url": "https://novit.ai",
+      "startDate": "2023-10",
+      "endDate": "",
+      "summary": "",
       "highlights": [
-        "Relativity"
+      ]
+    },
+    {
+      "name": "Novit AI",
+      "position": "Machine Learning Engineer",
+      "url": "https://novit.ai",
+      "startDate": "2022-03",
+      "endDate": "2023-10",
+      "summary": "",
+      "highlights": [
+        "Machine/deep learning pipelines with PyTorch",
+        "Containerization with Docker and Docker Compose",
+        "REST APIs with FastAPI on AWS cloud servers",
+        "Embedded work (Raspberry Pi & Jetson devices)"
+      ]
+    },
+    {
+      "name": "METU Heart Research Laboratory",
+      "position": "Research Assistant",
+      "url": "https://hrl.eee.metu.edu.tr",
+      "startDate": "2020-10",
+      "endDate": "2022-03",
+      "summary": "Worked with Assoc. Prof. Yeşim Serinağaoğlu on her TUBITAK funded projects:",
+      "highlights": [
+        "Application of Bayesian Estimation Methods to Electrocardiographic Imaging: Prior Model Selection and Reduction of Noise Effects",
+        "Performance Evaluation of Noninvasive Electrocardiographic Imaging for the Localization of Premature Ventricular Contractions from Clinical Data"
+      ]
+    },
+    {
+      "name": "Darkblue Telecommunications",
+      "position": "Machine Learning Engineer Intern",
+      "url": "",
+      "startDate": "2019-08",
+      "endDate": "2019-09",
+      "summary": "",
+      "highlights": [
+        "Became familiar with convolutional neural networks.",
+        "Trained a road detecting model and tested it on videos from a drone."
+      ]
+    },
+    {
+      "name": "Aircar Corp",
+      "position": "Electronics Engineer Intern",
+      "url": "https://www.aircar.aero/",
+      "startDate": "2019-07",
+      "endDate": "2019-08",
+      "summary": "",
+      "highlights": [
+        "Did research on battery management systems.",
+        "Worked on the safety of electronic components."
+      ]
+    },
+    {
+      "name": "ELTEMTEK",
+      "position": "Electrical Engineer Intern",
+      "url": "https://www.eltemtek.com.tr/",
+      "startDate": "2018-07",
+      "endDate": "2018-08",
+      "summary": "",
+      "highlights": [
+        "Designed and modeled new electric distribution networks for several districts in Turkey.",
+        "Worked with the future construction plans of the cities to decide on suitable locations for the new transformers and underground cables.",
+        "Modeled the said networks in the CYME software."
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "METU EEE",
+      "url": "http://eee.metu.edu.tr",
+      "area": "Biomedical",
+      "studyType": "M.Sc.",
+      "startDate": "2020",
+      "endDate": "2023",
       "score": "",
       "courses": [
-        "Theory of Relativity"
+        "CENG501 - Deep Learning"
       ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [],
-  "publications": [],
-  "skills": [],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker"
     },
     {
-      "language": "English",
-      "fluency": "Fluent"
+      "institution": "METU EEE",
+      "url": "http://eee.metu.edu.tr",
+      "area": "Control & Signal Processing",
+      "studyType": "B.S.",
+      "startDate": "2016",
+      "endDate": "2020",
+      "score": "",
+      "courses": []
     }
   ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Deep Learning Specialization",
+      "url": "https://coursera.org/share/79580f92edccc4e2cb215aca730a2d80",
+      "issuer": "Coursera & DeepLearning.AI"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "Docker & Docker Compose"
+    },
+    {
+      "name": "CI/CD (GitHub Actions)"
+    },
+    {
+      "name": "AWS (EC2, ECR, Lambda, DynamoDB, Lightsail)"
+    },
+    {
+      "name": "Bash"
+    },
+    {
+      "name": "Linux terminals"
+    },
+    {
+      "name": "Trivial React & Vue"
+    }
+  ],
+  "languages": [],
   "interests": [],
   "references": [],
   "projects": []
