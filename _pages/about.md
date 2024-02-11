@@ -10,6 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>ML / Backend Engineer</p>
+    <p><a href="https://github.com/furkan/cv/blob/main/output/CV.pdf">Cirriculum Vitae</a></p>
 
 news: false  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
