@@ -1,6 +1,6 @@
 ---
 layout: page
-title: life-in-weeks
+title: life in weeks
 description: Visualize your life in colored chunks
 importance: 1
 category: fun
