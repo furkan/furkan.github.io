@@ -8,9 +8,6 @@ profile:
   align: right
   image: furkan_square.jpg
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>ML / Backend Engineer</p>
-    <p><a href="https://github.com/furkan/cv/blob/main/output/CV.pdf">Curriculum Vitae</a></p>
 
 news: false  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
@@ -18,17 +15,21 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello! I am a developer with experience in
-* Python (flask, fastapi, pytorch, pandas)
-* Containerization technologies (docker, docker compose)
-* CI/CD (GitHub Actions)
-* AWS (EC2, ECR, Lambda, DynamoDB, Lightsail)
-* Bash
-* Linux terminals
-* Some frontend (React, Vue)
+Hello! I am a Software Engineer with experience in
+* Backend (REST APIs, Web Scraping)
+* Frontend (React, React Native, Expo)
+* Data (SQL, Pandas, Supabase)
+* ML (YOLO, AI Agents, Pytorch)
+* Devops (Docker & Compose, GitHub Actions, Reverse Proxy)
+* AWS (EC2, ECR, Lambda, DynamoDB, Lightsail) / Cloudflare Workers / Some GCP
+* Bash / Linux terminals / Some CUDA
 
-In addition to my professional experience, I have a personal interest in functional programming concepts, some of which are immutable data structures, determinist functions, and lazy evaluation. I find these ideas fascinating and try to incorporate them into my work where they're applicable.
+\*Some: Not an expert, but have enough knowledge and interest to have a conversation
 
-As a side project, I developed [kjbot](https://furkan.github.io/projects/korsanjaime/) in 2019, a Telegram bot that tracks debts between housemates. This was a fun project that allowed me to apply my programming skills to a practical problem. Since then, I tried to update the bot's codebase and introduce technologies that I learned as an always-learning developer.
+I also have experience leading international, cross-functional teams and managing relations with B2B clients and partners.
 
-I am committed to staying up-to-date with the latest advancements in my field, and I take pride in my ability to develop innovative solutions to complex problems. Feel free to check out the other pages.
+Have a look at my personal [projects](https://furkan.github.io/projects), or check out my [CV](https://github.com/furkan/cv/blob/main/output/CV.pdf).
+
+I enjoy writing songs and designing / creating digital games. Personal aspirations for the near future: improving at German and picking up scuba diving.
+
+I'm always looking for chances to challenge myself and deliver value. Feel free to reach out.
