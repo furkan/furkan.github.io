@@ -1,7 +1,7 @@
 ---
 layout: page
 title: kjbot
-description: a telegram bot for debt tracking between me and my housemates
+description: A telegram bot for debt tracking between me and my flatmates
 importance: 1
 category: fun
 ---
@@ -27,9 +27,9 @@ It has been our main debt tracking solution since the summer of 2019. It was ini
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/korsan.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/korsan.jpg" title="korsan" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/jaime.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/jaime.jpg" title="jaime" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
