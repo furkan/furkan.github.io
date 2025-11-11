@@ -15,7 +15,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello! I am a Software Engineer with experience in
+Hello! I am a Senior Software Engineer with experience in
 * Backend (REST APIs, Web Scraping)
 * Frontend (React, React Native, Expo)
 * Data (SQL, Pandas, Supabase)
