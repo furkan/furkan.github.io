@@ -1,4 +1,4 @@
-s---
+---
 layout: page
 title: sync orbit
 description: A casual, mobile puzzle game
