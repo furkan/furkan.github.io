@@ -28,7 +28,7 @@ Hello! I am a Senior Software Engineer with experience in
 
 I also have experience leading international, cross-functional teams and managing relations with B2B clients and partners.
 
-Have a look at my personal [projects](https://furkan.github.io/projects), or check out my [CV](https://github.com/furkan/cv/blob/main/output/CV.pdf).
+Have a look at my personal [projects](https://furkan.github.io/projects), or check out my [CV](https://github.com/furkan/brilliant-CV/releases/download/latest/CV.pdf).
 
 I enjoy writing songs and designing / creating digital games. Personal aspirations for the near future: improving at German and picking up scuba diving.
 
