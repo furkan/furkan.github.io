@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>furkan</title>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+
+    <!-- Reveal.js Basic Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    
+    <!-- THEME: Default to Dark (Black) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/moon.min.css" id="theme">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CUSTOM OVERLAY UI --- */
+        
+        /* Fixed Navigation Bar */
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 30px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100; /* Above slides */
+            font-family: 'Source Sans Pro', Helvetica, sans-serif;
+            transition: color 0.3s;
+        }
+
+        /* Logo / Name */
+        .navbar .brand {
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        /* Menu Links */
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            cursor: pointer;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li:hover, .navbar ul li.active {
+            opacity: 1;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            background: transparent;
+            border: 1px solid currentColor;
+            padding: 5px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            color: inherit;
+            transition: all 0.3s;
+        }
+
+        .theme-toggle:hover {
+            opacity: 0.8;
+        }
+
+        /* Tech Stack List */
+        .stack-list {
+          list-style: none;
+          padding: 0;
+          align-items: center;
+        }
+
+        .stack-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 4px;
+        }
+
+        .stack-label {
+          width: 240px;
+          text-align: right;
+          font-weight: bold;
+          margin-right: 10px;
+          flex-shrink: 0;
+        }
+
+        /* --- STYLING ADJUSTMENTS --- */
+        
+        /* Make content fit better on "webpage" style */
+        .reveal .slides section {
+            text-align: left;
+        }
+        
+        .reveal .slides section.center {
+            text-align: center;
+        }
+
+        /* Project Cards styling */
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #42affa;
+            margin-bottom: 20px;
+        }
+
+        /* Helper for Light Mode Visibility if needed */
+        body.light-theme .project-card {
+            background: rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #2a76dd;
+        }
+
+        /* --- 2x2 GRID STYLING --- */
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .project-grid .project-card {
+            margin-bottom: 0; /* Grid handles spacing */
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Reduce font sizes inside grid to fit 4 items nicely */
+        .project-card h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.1em; 
+            color: #42affa;
+        }
+        
+        .project-grid p {
+            font-size: 0.7em;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .project-grid small {
+            font-size: 0.5em;
+            opacity: 0.7;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .project-grid a {
+            font-size: 0.6em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- OVERLAY UI (Nav & Toggle) -->
+    <nav class="navbar">
+        <div class="brand">furkan</div>
+        <ul>
+            <li onclick="Reveal.slide(0, 0)" id="nav-home" class="active"></li>
+            <li onclick="Reveal.slide(1, 0)" id="nav-about">About</li>
+            <li onclick="Reveal.slide(2, 0)" id="nav-projects">Projects</li>
+            <li onclick="Reveal.slide(3, 0)" id="nav-contact">Contact</li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-sun"></i> / <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- REVEAL JS CONTAINER -->
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: HOME -->
+            <section class="center" data-state="home">
+                <h1>Hello, I'm <span style="color: #42affa">furkan</span>.</h1>
+                <h3>Senior Software Engineer</h3>
+                <br>
+                <p style="font-size: 0.6em; opacity: 0.7;">
+                    Use arrow keys or the menu to navigate.<br>
+                    <i class="fas fa-arrow-right"></i>
+                </p>
+            </section>
+
+            <!-- SLIDE 2: ABOUT -->
+            <section data-state="about">
+                <div style="display: flex;">
+                    <div style="flex: 1;">
+                        <ul class="stack-list">
+                            <li class="stack-item">
+                              <span class="stack-label">Backend</span>
+                              <span>: REST APIs, Web Scraping</span>
+                            </li>
+                            <li class="stack-item">
+                              <span class="stack-label">Frontend</span>
+                              <span>: React, React Native, Expo</span>
+                            </li>
+                            <li class="stack-item">
+                              <span class="stack-label">Data</span>
+                              <span>: SQL, Pandas, Supabase</span>
+                            </li>
+                            <li class="stack-item">
+                              <span class="stack-label">ML</span>
+                              <span>: Pytorch, YOLO, AI Agents</span>
+                            </li>
+                            <li class="stack-item">
+                              <span class="stack-label">DevOps</span>
+                              <span>: Docker, GH Actions, Linux</span>
+                            </li>
+                            <li class="stack-item">
+                              <span class="stack-label">Cloud</span>
+                              <span>: AWS, Cloudflare, GCP</span>
+                            </li>
+                        </ul>
+                        <p>I also have experience leading international, cross-functional teams and managing relations with B2B clients and partners.</p>
+                        <p>Have a look at my <a href="https://github.com/furkan/brilliant-CV/releases/download/latest/CV.pdf">CV</a>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: PROJECTS (Vertical Stack) -->
+            <section data-state="projects">
+                
+                <!-- 3.0 Project Cover -->
+                <section class="center">
+                    <h2>Projects</h2>
+                    <p>Move <strong>down</strong> <i class="fas fa-arrow-down"></i>.</p>
+                </section>
+
+                <!-- 3.1 -->
+                <section>
+                    <div class="project-card">
+                        <h4>dockerlings</h4>
+                        <p>A TUI with exercises to learn Docker.</p>
+                        <small>Tech: Bash, Docker, Go</small>
+                        <p style="font-size: 0.7em;">
+                          <a href="https://asciinema.org/a/758902">Demo</a>, by
+                          <a href="https://github.com/furkan/dockerlings/pull/3">sh-cho</a>
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/furkan/dockerlings?style=flat-square">
+                        <a href="https://github.com/furkan/dockerlings" style="font-size: 0.7em;">View Source <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h4>chezzl</h4>
+                            <p>Synchronous chezz puzzle battles.</p>
+                            <small>Tech: NodeJS, React, SQLite</small>
+                            <a href="https://github.com/furkan/chezzl">View Source <i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="project-card">
+                            <h4>dekart</h4>
+                            <p>Credit card campaigns.</p>
+                            <small>Tech: Django, Supabase, Expo, Playwright</small>
+                            <a href="https://dekartkampanya.com.tr">View Site <i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3.2 -->
+                <section>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <h4>korsan-jaime</h4>
+                            <p>A telegram bot for debt tracking.</p>
+                            <small>Tech: Flask, Docker, Raspberry PI</small>
+                            <a href="https://github.com/furkan/korsan-jaime-bot">View Source <i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="project-card">
+                            <h4>windsorai-python-sdk</h4>
+                            <p>Windsor.ai API client and CLI.</p>
+                            <small>Tech: Python</small>
+                            <a href="https://github.com/furkan/windsorai-python-sdk">View Source <i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="project-card">
+                            <h4>kulak</h4>
+                            <p>Ear training webpage.</p>
+                            <small>Tech: HTML, CSS, Javascript</small>
+                            <a href="https://furkan.github.io/kulak">View Site <i class="fas fa-link"></i></a>
+                            <a href="https://github.com/furkan/kulak">View Source <i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="project-card">
+                            <h4>life in weeks</h4>
+                            <p>Memento mori webpage.</p>
+                            <small>Tech: HTML, CSS, Javascript</small>
+                            <a href="https://furkan.github.io/life-in-weeks">View Site <i class="fas fa-link"></i></a>
+                            <a href="https://github.com/furkan/life-in-weeks">View Source <i class="fab fa-github"></i></a>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+            <!-- SLIDE 4: CONTACT -->
+            <section class="center" data-state="contact">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out.</p>
+                
+                <div style="display: flex; justify-content: center; gap: 30px; font-size: 3rem; margin-top: 50px;">
+                    <a href="mailto:furkanaldemir@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/furkan"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/furkanaldemir"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    
+    <script>
+        // 1. Initialize Reveal
+        Reveal.initialize({
+            hash: true, // Adds #/1/2 to URL
+            mouseWheel: false, // Enable if you want scroll wheel support
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            // Remove standard controls since we built a custom menu
+            controls: true, 
+            progress: true,
+        });
+
+        // 2. Theme Toggle Logic
+        const themeLink = document.getElementById('theme');
+        let isDark = true;
+
+        function toggleTheme() {
+            isDark = !isDark;
+            
+            if (isDark) {
+                // Switch to Dark Theme
+                themeLink.href = "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/moon.min.css";
+                document.body.classList.remove('light-theme');
+                // Adjust Navbar text color manually if needed, or rely on inherit
+                document.querySelector('.navbar').style.color = '#fff'; 
+            } else {
+                // Switch to Light Theme
+                themeLink.href = "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/solarized.min.css";
+                document.body.classList.add('light-theme');
+                // Adjust Navbar text color
+                document.querySelector('.navbar').style.color = '#333'; 
+            }
+        }
+
+        // 3. Update Menu Active State on Slide Change
+        Reveal.on('slidechanged', event => {
+            // Remove active class from all
+            document.querySelectorAll('.navbar ul li').forEach(el => el.classList.remove('active'));
+
+            // Get horizontal index (h)
+            const indexh = event.indexh;
+            
+            // Map index to ID
+            const ids = ['nav-home', 'nav-about', 'nav-projects', 'nav-contact'];
+            if(ids[indexh]) {
+                document.getElementById(ids[indexh]).classList.add('active');
+            }
+        });
+        
+        // Ensure Navbar color is correct on load
+        document.querySelector('.navbar').style.color = '#fff';
+
+    </script>
+</body>
+</html>
